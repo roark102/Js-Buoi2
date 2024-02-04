@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JavaScript buổi 2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- link CSS  -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper mx-auto text-center my-5">
+      <div class="bai1 container">
+        <h2 class="text-danger">Bài tập 1</h2>
+        <div class="d-flex justify-content-center">
+          <div class="form-group mr-3">
+            <label for=""></label>
+            <input
+              type="text"
+              name=""
+              id="daySalary"
+              class="form-control shadow-lg"
+              placeholder="Nhập lương 1 ngày "
+            />
+          </div>
+          <div class="form-group">
+            <label for=""></label>
+            <input
+              type="text"
+              name=""
+              id="daysWorking"
+              class="form-control shadow-lg"
+              placeholder="Nhập số ngày làm "
+            />
+          </div>
+        </div>
+        <button
+          class="btn btn-primary d-block mx-auto rounded-pill px-4 py-2"
+          id="tinhLuong"
+        >
+          Tính lương
+        </button>
+        <div id="result1"></div>
+      </div>
+      <div class="bai2 container pt-5">
+        <h2 class="text-danger">Bài tập 2</h2>
+        <div class="row">
+          <div class="form-group col-4 m-0">
+            <label for=""></label>
+            <input
+              type="text"
+              name=""
+              id="number1"
+              class="form-control shadow-lg"
+              placeholder="Nhập số thứ 1 "
+            />
+          </div>
+          <div class="form-group col-4 m-0">
+            <label for=""></label>
+            <input
+              type="text"
+              name=""
+              id="number2"
+              class="form-control shadow-lg"
+              placeholder="Nhập số thứ 2 "
+            />
+          </div>
+          <div class="form-group col-4 m-0">
+            <label for=""></label>
+            <input
+              type="text"
+              name=""
+              id="number3"
+              class="form-control shadow-lg"
+              placeholder="Nhập số thứ 3 "
+            />
+          </div>
+          <div class="form-group col-4 m-0">
+            <label for=""></label>
+            <input
+              type="text"
+              name=""
+              id="number4"
+              class="form-control shadow-lg"
+              placeholder="Nhập số thứ 4 "
+            />
+          </div>
+          <div class="form-group col-4 m-0">
+            <label for=""></label>
+            <input
+              type="text"
+              name=""
+              id="number5"
+              class="form-control shadow-lg"
+              placeholder="Nhập số thứ 5 "
+            />
+          </div>
+        </div>
+        <button
+          class="btn btn-primary d-block mx-auto mt-3 rounded-pill px-4 py-2"
+          id="tinhTrungBinh"
+        >
+          Tính trung bình
+        </button>
+        <div id="result2"></div>
+      </div>
+      <div class="bai3 container pt-5">
+        <h2 class="text-danger">Bài tập 3</h2>
+        <div class="form-group d-inline-block">
+          <label for=""></label>
+          <input
+            type="text"
+            name=""
+            id="usd"
+            class="form-control"
+            placeholder="Nhập số tiền USD"
+          />
+        </div>
+        <button
+          class="btn btn-primary d-block mx-auto mt-3 rounded-pill px-4 py-2"
+          id="doiTien"
+        >
+          Quy đổi tiền
+        </button>
+        <div id="result3"></div>
+      </div>
+      <div class="bai4 container pt-5">
+        <h2 class="text-danger">Bài tập 4</h2>
+        <div class="d-flex justify-content-center">
+          <div class="form-group mr-3">
+            <label for=""></label>
+            <input
+              type="text"
+              name=""
+              id="length"
+              class="form-control shadow-lg"
+              placeholder="Nhập chiều dài "
+            />
+          </div>
+          <div class="form-group">
+            <label for=""></label>
+            <input
+              type="text"
+              name=""
+              id="width"
+              class="form-control shadow-lg"
+              placeholder="Nhập chiều rộng"
+            />
+          </div>
+        </div>
+        <button
+          class="btn btn-primary d-block mx-auto rounded-pill px-4 py-2"
+          id="tinh"
+        >
+          Tính
+        </button>
+        <div id="result4"></div>
+      </div>
+      <div class="bai5 container pt-5">
+        <h2 class="text-danger">Bài tập 5</h2>
+        <div class="form-group d-inline-block">
+          <label for=""></label>
+          <input
+            type="text"
+            name=""
+            id="so2ChuSo"
+            class="form-control"
+            placeholder="Nhập số có 2 chữ số"
+          />
+        </div>
+        <button
+          class="btn btn-primary d-block mx-auto mt-3 rounded-pill px-4 py-2"
+          id="tinhTong"
+        >
+          Tính tổng
+        </button>
+        <div id="result5"></div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- main js  -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
